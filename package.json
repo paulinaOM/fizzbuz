@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./node_modules/jest/bin/jest",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/paulinaOM/fizzbuz/issues"
   },
-  "homepage": "https://github.com/paulinaOM/fizzbuz#readme"
+  "homepage": "https://github.com/paulinaOM/fizzbuz#readme",
+  "dependencies": {
+    "jest": "^28.0.0"
+  }
 }
