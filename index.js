@@ -1,8 +1,8 @@
 const Reader = require("./lib/utils/Reader");
-const ExplorerServices = require("./lib/services/ExplorerServices");
+const ExplorerService = require("./lib/services/ExplorerService")
 
 const explorers = Reader.readJsonFile("./explorers.json");
 console.log(explorers);
 
-const explorersByMission = ExplorerServices.filterByMission(explorers, "node");
+const explorersByMission = ExplorerService.filterByMission(explorers, 'node');
 console.log(explorersByMission);
