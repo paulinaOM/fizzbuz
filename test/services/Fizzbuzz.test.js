@@ -6,8 +6,8 @@ describe("Test for FizzbuzzService.js", ()=>{
         const explorers = Reader.readJsonFile('explorers.json')
         const explorersWithTrick = FizzbuzzService.getExplorersWithTrick(explorers);
 
+        console.log(explorersWithTrick);
         expect(explorersWithTrick.every(explorer=>explorer.trick!=undefined)).toBe(true);
-
         explorersWithTrick.every(explorer=>expect(explorer.trick).not.toBeUndefined())
     })
 })
